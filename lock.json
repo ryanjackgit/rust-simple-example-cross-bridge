@@ -1,0 +1,23 @@
+[{
+       "inputs": [
+          {
+  "internalType": "address",
+"name": "_requester",
+"type": "address"
+},
+{
+"internalType": "uint256",
+    "name": "_bridgedAmount",
+"type": "uint256"
+},
+{
+"internalType": "uint256",
+"name": "_mainDepositHash",
+"type": "uint256"
+}
+],
+"name": "lockTokens",
+"outputs": [],
+"stateMutability": "nonpayable",
+"type": "function"
+}]

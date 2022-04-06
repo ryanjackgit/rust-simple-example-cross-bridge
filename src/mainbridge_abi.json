@@ -1,0 +1,126 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_mainToken",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_gateway",
+				"type": "address"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "requester",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "mainDepositHash",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "TokensLocked",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "requester",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "sideDepositHash",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			}
+		],
+		"name": "TokensUnlocked",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_requester",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_bridgedAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_mainDepositHash",
+				"type": "uint256"
+			}
+		],
+		"name": "lockTokens",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_requester",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_bridgedAmount",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_sideDepositHash",
+				"type": "uint256"
+			}
+		],
+		"name": "unlockTokens",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

@@ -1,0 +1,9 @@
+[{
+       "type":"function",
+	"inputs": [{
+		"name":"_requester",
+		"type":"address"
+	}],
+"name":"foo",
+"outputs": []
+}]
