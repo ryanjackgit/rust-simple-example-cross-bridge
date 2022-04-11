@@ -319,7 +319,7 @@ async fn gateway_to_mainbridge_return_token(po:&TransferPO) -> anyhow::Result<()
       let contract_address = Address::from_str(crate::MAIN_BRIDGE_CONTRACT_ADDRESS)?;
 
       // Insert the 32-byte private key in hex format (do NOT prefix with 0x)   
-      let prvk = SecretKey::from_str("7fdfb60aaae2a6f779a21e8efa9829eb1ca89b7da64eea920cb3e1ba242e2fee")?;
+      let prvk = SecretKey::from_str(crate::PRIVATE_KEY)?;
   
    
       let contract = Contract::from_json(
